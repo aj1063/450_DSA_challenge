@@ -21,3 +21,19 @@ void rotate(int arr[], int n)
         i++;
     }
 }
+
+
+//third approach 
+//we can do reverse first n-1 element then we can reverse entire array
+// k is no of rotation
+for (i = 0, j = n - k - 1; i < j; i++, j--) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    // Reverse the entire array
+    for (i = 0, j = n - 1; i < j; i++, j--) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
