@@ -5,8 +5,8 @@ public:
         int c = 0;
         unordered_map<int, int>mp;
         for(int i = 0; i < n; i++)  {
-            c += mp[k-arr[i]];
-            mp[arr[i]]++;
+            c += mp[k-arr[i]];//if duplicate no present then counter will increase frequency time
+            mp[arr[i]]++;//increase the frequency of arr[i]
         }
         return c;
     }
