@@ -17,7 +17,7 @@ class Solution{
     }
 };
 
-//Second method
+//Second method ----//meh=>max include current point,,,,msf=>max value without include current point
 long long meh = 0;
         long long msf = INT_MIN;
         for(int i = 0; i < n; i++)    {
