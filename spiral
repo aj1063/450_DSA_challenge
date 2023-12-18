@@ -24,7 +24,7 @@ vector<int>v;
      for(int i=bottom;i>=top;i--){
          v.push_back(matrix[i][left]);
      }
-     left--;
+     left++;
      }
  }
  return v;
